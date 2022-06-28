@@ -24,7 +24,15 @@ public class PalindromeWord {
     }
 
     public static void main(String[] args) {
-        String str = "SUNREHAOUS";
-        System.out.println(isPalindrome(str));
+        String str = "madam";
+        String str1 = "adieu";
+        String str2 = "rotor";
+        String str3 = "";
+        String str4 = " ";
+        System.out.println("Palindrome? " + isPalindrome(str));
+        System.out.println("Palindrome? " + isPalindrome(str1));
+        System.out.println("Palindrome? " + isPalindrome(str2));
+        System.out.println("Palindrome? " + isPalindrome(str3));
+        System.out.println("Palindrome? " + isPalindrome(str4));
     }
 }

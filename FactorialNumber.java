@@ -29,9 +29,15 @@ public class FactorialNumber {
         return n == 1;
     }
 
-    public static void main(String[] args) {
-        int n = 24;
-        System.out.println("using Recursive Ans:"+otherWays(n));
-        System.out.println("using loop Ans:"+isFactorial(n));
+
+   public static void main(String[] args) {
+        int n = 2;
+        int n1 = 27;
+        int n2 = 24;
+        int n3 = 5040;
+        System.out.println("The number " + n + " is Factorial? "+otherWays(n));
+        System.out.println("The number " + n1 + " is Factorial? "+otherWays(n1));
+        System.out.println("The number " + n2 + " is Factorial? "+otherWays(n2));
+        System.out.println("The number " + n3 + " is Factorial? "+otherWays(n3));
     }
 }
