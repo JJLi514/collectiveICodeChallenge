@@ -1,3 +1,6 @@
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class PalindromeWord {
     static boolean strStatic(String str, int b, int e){
 //        如果只有一个字符
@@ -34,5 +37,12 @@ public class PalindromeWord {
         System.out.println("Palindrome? " + isPalindrome(str2));
         System.out.println("Palindrome? " + isPalindrome(str3));
         System.out.println("Palindrome? " + isPalindrome(str4));
+    }
+
+    @Test
+    void test(){
+        Assertions.assertTrue(isPalindrome("madam"));
+        Assertions.assertFalse(isPalindrome("adieu"));
+        Assertions.assertTrue(isPalindrome("rotor"));
     }
 }

@@ -1,3 +1,6 @@
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+
 public class FactorialNumber {
     static boolean otherWays(int n){
         if (n == 0){
@@ -39,5 +42,12 @@ public class FactorialNumber {
         System.out.println("The number " + n1 + " is Factorial? "+otherWays(n1));
         System.out.println("The number " + n2 + " is Factorial? "+otherWays(n2));
         System.out.println("The number " + n3 + " is Factorial? "+otherWays(n3));
+    }
+
+    @Test
+    void test(){
+        Assertions.assertTrue(isFactorial(2));
+        Assertions.assertFalse(isFactorial(27));
+        Assertions.assertTrue(isFactorial(24));
     }
 }
